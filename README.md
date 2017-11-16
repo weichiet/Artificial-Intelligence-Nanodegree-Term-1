@@ -23,4 +23,4 @@ Implemented the simulated annealing algorithm in a Jupyter notebook and used it 
 Used logic and planning techniques to create an AI that finds the most efficient route to route cargo around the world to their respective destinations. This project used a combination of propositional logic and search along with A* heuristics to find optimal planning solutions.
 
 5. [Design a Sign Language Recognition System](./recognizer)  
-Built a system to recognize gestures in American Sign Language, from individual words to complete sentences. This project trained a set of Hidden Markov Models (HMMs) on a dataset of videos that have been pre-processed and annotated, and test on novel sequences.
+Built a system that can recognize words communicated using the American Sign Language (ASL). Trained a set of Hidden Markov Models (HMMs) using part of a preprocessed dataset of tracked hand and nose positions extracted from video to try and identify individual words from test sequences. Experimented with model selection techniques including BIC, DIC, and K-fold Cross Validation.
