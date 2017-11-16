@@ -1,6 +1,8 @@
 # Artificial Intelligence Nanodegree
 ## Introductory Project: Diagonal Sudoku Solver
 
+In this project, you will be writing code to implement two extensions of our sudoku solver. The first one will be to implement the technique called "naked twins". The second one will be to modify our existing code to solve a diagonal sudoku. The goals are to implement the naked twins function, and write an AI agent that will solve the Diagonal Sudoku game.
+
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: If 2 boxes within the same unit have identical 2 possible values, it implies:  
@@ -8,17 +10,17 @@ A: If 2 boxes within the same unit have identical 2 possible values, it implies:
 * The 2 boxes can contain one of the possible value and therefore,   
 * No other boxes in their same unit can contain these 2 values.
 
-Based on this constraint, we can remove these 2 values from the peers of these 2 boxes in the same unit. This further reduce the number of possibilities of each square and the size of the search space. 
+Based on this constraint, we can remove these 2 values from the peers of these 2 boxes in the same unit. This further reduce the number of possibilities of each square and the size of the search space.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: To solve the diagonal Sudoku problem, we can add the addition diagonal units in additional to row units, column units and square units that defined previously. Adding the diagonal units impose additional constraint because the numbers 1 to 9 can all appear exactly once in the two main diagonals. This constraint further reduces the search space of the solution. 
+A: To solve the diagonal Sudoku problem, we can add the addition diagonal units in additional to row units, column units and square units that defined previously. Adding the diagonal units impose additional constraint because the numbers 1 to 9 can all appear exactly once in the two main diagonals. This constraint further reduces the search space of the solution.
 
 ### Install
 
 This project requires **Python 3**.
 
-We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
 Please try using the environment we provided in the Anaconda lesson of the Nanodegree.
 
 ##### Optional: Pygame
