@@ -1,6 +1,7 @@
 # Artificial Intelligence Nanodegree
 
 # Part 1: Implement a Planning Search
+Solve air cargo logistics problems by decomposing them into individual actions using a formal planning framework, identifying dependencies and effects of each action, and generating valid plans using search techniques. Experiment with various automatically generated heuristics, including planning graph heuristics, and provide an analysis of your results.
 
 ## Synopsis
 
