@@ -3,7 +3,14 @@
 
 In this project, you will be writing code to implement two extensions of our sudoku solver. The first one will be to implement the technique called "naked twins". The second one will be to modify our existing code to solve a diagonal sudoku. The goals are to implement the naked twins function, and write an AI agent that will solve the Diagonal Sudoku game.
 
-# Question 1 (Naked Twins)
+## Naked Twins
+The naked twins technique is the following. Consider the following puzzle, and look at the two highlighted boxes, ``'F3'`` and ``'I3'``.
+
+![Naked Twins](naked-twins-2.png)
+
+As you can see, we've removed the values 2 and 3 from the boxes ``'D3'`` and ``'E3'``. This is the naked twins technique. In this project, you'll write a function that implements this technique.
+
+### Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: If 2 boxes within the same unit have identical 2 possible values, it implies:  
 
@@ -12,10 +19,16 @@ A: If 2 boxes within the same unit have identical 2 possible values, it implies:
 
 Based on this constraint, we can remove these 2 values from the peers of these 2 boxes in the same unit. This further reduce the number of possibilities of each square and the size of the search space.
 
-# Question 2 (Diagonal Sudoku)
+## Diagonal Sudoku
+A diagonal sudoku is like a regular sudoku, except that among the two main diagonals, the numbers 1 to 9 should all appear exactly once. In this project, you'll modify the functions we've written in the lecture (or you can write your own!) in order to solve every diagonal sudoku.
+
+![Diagonal Sudoku](diagonal-sudoku.png)
+
+### Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: To solve the diagonal Sudoku problem, we can add the addition diagonal units in additional to row units, column units and square units that defined previously. Adding the diagonal units impose additional constraint because the numbers 1 to 9 can all appear exactly once in the two main diagonals. This constraint further reduces the search space of the solution.
 
+## Instructions
 ### Install
 
 This project requires **Python 3**.
